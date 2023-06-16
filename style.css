@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*,
+::before,
+::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: hsl(234, 12%, 34%);
+    background-color: #FAFAFA;
+}
+
+.main-container{
+    text-align: center;
+    margin: 1em 1.5em;
+}
+
+.main-container header{
+    padding: 1em 0em 3.5em 0em;
+}
+
+.main-container header h2{
+    line-height: .7em;
+}
+
+.main-container header .thin{
+    font-weight: 200;
+}
+
+.main-container header p{
+    font-size: .9em;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+}
+
+.main-container .card-container{
+    display: grid;
+    gap: 1em;
+}
+
+.main-container .card-container .card{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 2px 4px 15px #9c9b9b;
+    text-align: left;
+    padding: 2em 2.5em;
+}
+
+.main-container .card-container .card h4{
+    line-height: .1em;
+}
+
+.main-container .card-container .card p{
+    font-size: .7em;
+    color: hsl(229, 6%, 66%);
+}
+
+.main-container .card-container .card svg{
+    float: right;
+}
+
+.main-container .card-container .supervisor{
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.main-container .card-container .team{
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.main-container .card-container .karma{
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.main-container .card-container .calculator{
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media(min-width:900px){
+    .main-container .card-container{
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        margin: 0 8em;
+        gap: 1.5em;
+    }
+
+    .main-container .card-container .calculator{
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+        font-size: 1.1em;
+    }
+
+    .main-container .card-container .karma{
+        grid-column-start: 2;
+        font-size: 1.1em;
+    }
+
+    .main-container .card-container .supervisor{
+        grid-row-end: span 2;
+        font-size: 1.1em;
+    }
+
+    .main-container .card-container .team{
+        font-size: 1.1em;
+    }
+
+}
